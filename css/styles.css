@@ -139,6 +139,8 @@ img {
 .hero {
   text-align: center;
   margin-bottom: 79px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero,
