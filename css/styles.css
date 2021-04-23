@@ -7,6 +7,7 @@
   --secondary-bg-color: #f5f4fa;
   --adrress-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --portfolio-cards-gap: 30px;
 }
 
 
@@ -66,8 +67,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 2px solid tomato;
 }
 
 .page-body {
@@ -83,6 +82,12 @@ img {
 
 .start-section {
   border: 1px solid #ECECEC;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
 }
 
 .logo {
@@ -104,8 +109,25 @@ img {
 
 /*site nav*/
 
+.site-nav.list {
+  display: flex;
+  margin-left: 90px;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
+}
+
+.contacts-nav .item:not(:last-child),
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-nav .mail,
+.contacts-nav .phone,
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* site+contacts nav */
@@ -128,6 +150,11 @@ img {
 }
 
 /*contacts nav*/
+
+.contacts-nav.list {
+  display: flex;
+  margin-left: auto;
+}
 
 .contacts-nav .mail,
 .contacts-nav .phone {
@@ -178,6 +205,14 @@ img {
 
 /*main*/
 
+.advantage .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage.list {
+  display: flex;
+}
+
 .section-title {
   color: var(--title-text-color);
   font-weight: bold;
@@ -196,13 +231,37 @@ img {
   text-transform: uppercase;
 }
 
+/* our features */
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features.list {
+  display: flex;
+  margin-top: 50px;
+}
+
 /*our team*/
 
 .our-team {
+  padding-top: 90px;
   background-color: var(--secondary-bg-color);
 }
 
+.team.list{
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .member {
+  margin-top: 30px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -211,6 +270,9 @@ img {
 }
 
 .member-domain {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -218,12 +280,25 @@ img {
 
 /*footer*/
 
+.end-section .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.end-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address {
   color: var(--main-bg-color);
 }
 
 .end-section .mail,
 .end-section .phone {
+  display: block;
+  margin-top: 9px;
+
   color: var(--adrress-color);
 }
 
@@ -237,6 +312,16 @@ img {
 }
 
 /*portfolio*/
+
+.portfolio-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.portfolio-nav .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .secondary-button {
   border-radius: 4px;
@@ -278,6 +363,31 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--portfolio-cards-gap));
+  margin-top: calc(-1 * var(--portfolio-cards-gap));
+}
+
+.portfolio-cards .item {
+  flex-basis: calc(100%/3- var(--portfolio-cards-gap));
+  margin-left: var(--portfolio-cards-gap);
+  margin-top: var(--portfolio-cards-gap);
+}
+
+.card {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
+.card-text {
+  margin-top: 4px;
 }
 
 .link {
