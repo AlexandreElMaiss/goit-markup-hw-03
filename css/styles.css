@@ -56,10 +56,10 @@ img {
   padding: 94px 0;
 }
 
-.section.no-padding {
+/* .section.no-padding {
   padding-top: 0;
   padding-bottom: 0;
-}
+} */
 
 .container {
   width: 1200px;
@@ -91,6 +91,9 @@ img {
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -165,7 +168,6 @@ img {
 
 .hero {
   text-align: center;
-  margin-bottom: 79px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -233,6 +235,10 @@ img {
 
 /* our features */
 
+.our-features {
+  padding-top: 0px;
+}
+
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -245,22 +251,31 @@ img {
 /*our team*/
 
 .our-team {
-  padding-top: 90px;
   background-color: var(--secondary-bg-color);
 }
 
 .team.list{
   display: flex;
   padding-top: 50px;
-  padding-bottom: 100px;
+}
+
+.team .item {
+  border-radius: 0px 0px 4px 4px ;
+
+  background-color: var(--main-bg-color);
 }
 
 .team .item:not(:last-child) {
   margin-right: 30px;
 }
 
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .member {
-  margin-top: 30px;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -270,9 +285,6 @@ img {
 }
 
 .member-domain {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -316,7 +328,7 @@ img {
 .portfolio-nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .portfolio-nav .item:not(:last-child) {
@@ -376,14 +388,12 @@ img {
   flex-basis: calc(100%/3- var(--portfolio-cards-gap));
   margin-left: var(--portfolio-cards-gap);
   margin-top: var(--portfolio-cards-gap);
-}
-
-.card {
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  background-color: var(--main-bg-color);
 }
 
 .card-content {
   padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1)
 }
 
 .card-text {
