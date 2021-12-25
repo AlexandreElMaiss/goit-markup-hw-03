@@ -10,15 +10,14 @@
   --portfolio-cards-gap: 30px;
 }
 
-
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px)
+  clip: rect(1px 1px 1px 1px);
   padding: 0 !important;
   border: 0 !important;
   height: 1px !important;
   width: 1px !important;
-  overflow: hidden
+  overflow: hidden;
 }
 
 h1,
@@ -46,7 +45,7 @@ img {
   height: auto;
 }
 
-.list {
+ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -81,19 +80,15 @@ img {
 /*header*/
 
 .start-section {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -134,7 +129,7 @@ img {
 }
 
 /* site+contacts nav */
-.site-nav .current ,
+.site-nav .current,
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-nav .mail:hover,
@@ -178,7 +173,7 @@ img {
 }
 
 .hero-title {
-  margin-bottom: 30px; ;
+  margin-bottom: 30px;
 
   color: var(--main-bg-color);
   font-weight: 900;
@@ -211,7 +206,7 @@ img {
   margin-right: 30px;
 }
 
-.advantage.list {
+.advantage {
   display: flex;
 }
 
@@ -254,13 +249,13 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.team.list{
+.team.list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .team .item {
-  border-radius: 0px 0px 4px 4px ;
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--main-bg-color);
 }
@@ -309,7 +304,6 @@ img {
 .end-section .mail,
 .end-section .phone {
   display: block;
-  margin-top: 9px;
 
   color: var(--adrress-color);
 }
@@ -323,6 +317,9 @@ img {
   color: var(--accent-color);
 }
 
+.contacts li {
+  margin-top: 9px;
+}
 /*portfolio*/
 
 .portfolio-nav {
@@ -385,7 +382,7 @@ img {
 }
 
 .portfolio-cards .item {
-  flex-basis: calc(100%/3- var(--portfolio-cards-gap));
+  flex-basis: calc(100% / 3- var(--portfolio-cards-gap));
   margin-left: var(--portfolio-cards-gap);
   margin-top: var(--portfolio-cards-gap);
   background-color: var(--main-bg-color);
@@ -393,7 +390,7 @@ img {
 
 .card-content {
   padding: 20px 24px;
-  border: 1px solid rgba(238, 238, 238, 1)
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .card-text {
@@ -403,7 +400,7 @@ img {
 .link {
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.14;
 }
 
 .link-title {
